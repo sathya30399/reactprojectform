@@ -10,12 +10,7 @@ import {expensePrpos} from "./module"
 function App() {
   const [dataa,setdata]=useState<expensePrpos[]>([{description:"milk",amount:"20",category:"Groceries",id:1},
   {description:"egg",amount:"20",category:"Groceries",id:2}])
-
-  // const [data2,setdata2]=useState(dataa)
   const [scat,crtcat] =useState("");
-
-  //const origArr = [...dataa];
-
   function addexpense(data:expensePrpos){
     console.log("form clicked")
     let id1:number
@@ -38,15 +33,10 @@ function App() {
     console.log("deleted_data",deleted_data)
 
    setdata(deleted_data)
-   // ftr(scat)
-
-
-  }
+   }
   const ftr=(cat:string)=>{
 
      console.log("On change", cat)
-    //crtcat(cat);
-
     const ft_data =dataa.filter(
       expensePrpos=> (expensePrpos.category === cat)
         
@@ -55,17 +45,11 @@ function App() {
       
     }
 
-    // useEffect(() =>{
-    //   setdata2([...dataa])
-
-    // },[dataa]
-      
-
-    // )
-
+   
 
   return (
     <div className="App">
+      <h1>Expense Tracker</h1>
       <Form  addlist={addexpense}/>
       <Table tabellist={dataa} deletefn={delete1} filter={ftr} tot={0} />
       
