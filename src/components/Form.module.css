@@ -1,0 +1,84 @@
+body{
+    background-color: #d7e4e4;
+}
+.form_head{
+    border:0px solid rgb(5, 5, 5);
+    max-width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.mb_3{
+    max-width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+.label{
+    margin-bottom: 10px;
+}
+.mb_3 p{
+    color: red;
+    margin: 0;
+}
+
+.form_control{
+    width: 100%;
+    padding:10px 0px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    
+}
+.form_control:focus{
+    border: 5px solid rgb(146, 172, 170);
+    outline: none;
+}
+.form_select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.form_select:focus{
+    border: 5px solid rgb(146, 172, 170);
+    outline: none;
+    background-color:  hsl(251, 27%, 92%);
+    
+}
+.submit_btn{
+    padding:10px 20px;
+    margin:10px 10px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 0;
+}
+.table_head{
+    border:1px solid rgb(5, 5, 5);
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.table_head_th{
+    border: 1px solid;
+    padding: 8px;
+    
+    
+}
+
+.table_head_td{
+    border: 1px solid;
+    padding: 8px;
+    text-align: center;
+}
+@media screen  and (max-width:576px){
+    .form_head{
+        max-width: 100%;
+    }
+    .table_head{
+        width: 100%;
+    }
+    .table_head_th{
+        padding: 0;
+    }
+}
+
